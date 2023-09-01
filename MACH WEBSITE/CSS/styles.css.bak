@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)),url("img/blue-swimming-pool-rippled-water-detail.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F0F8FF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #F0F8FF;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #87CEEB;
+    background: #87CEEB;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #87CEEB;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*---- gallery slider ----*/
+
+.test{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+/*h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #72a0c1;
+    background-color: ;
+}*/
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 1000%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+}
+#slider figure img {
+    width: 10%;
+    float: left;
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: cover;
+}
+#slider figure img:hover{
+	filter: none;
+	-webkit-filter: grayscale(50%);
+	cursor: pointer;
+
+
+}
+@keyframes slider {
+    0% { left: 0; } 
+    7% { left: 0%; } 
+    10% { left: -100%; } 
+    17% { left: -100%; }
+    20% { left: -200%; }
+    27% { left: -200%; }
+    30% { left: -300%; }
+    37% { left: -300%; }
+    40% { left: -400%; }
+    47% { left: -400%; }
+    50% { left: -500%; }
+    57% { left: -500%; }
+    60% { left: -600%; }
+    67% { left: -600%; }
+    70% { left: -700%; }
+    77% { left: -700%; }
+    80% { left: -800%; }
+    87% { left: -800%; }
+    90% { left: -900%; }
+    100% { left: -900%; }
+
+}
+#footer {
+	color: #fff;
+    min-height: 15vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)),url("img/blue-swimming-pool-rippled-water-detail.jpg");
+  /*  background-position: center;*/
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-text: center;
+}
+
