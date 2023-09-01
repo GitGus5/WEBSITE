@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <title>Oasis Pool Construction Inc.</title>
+    <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
+    <link rel="shortcut icon" href="icon/oasis_tree.ico" />
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="javascript" href="scripts/dropdown.js"></link>
+    <link rel="javascript" href="scripts/gallery.js"></link>
+	</head>
+        <style>
+            .header{
+                min-height: 100vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4,9,30,0.7),
+                rgba(4,9,30,0.7)),url("img/blue-swimming-pool-rippled-water-detail.jpg");
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+            #footer {
+                color: #fff;
+                min-height: 15vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4,9,30,0.7),
+                rgba(4,9,30,0.7)),url("img/blue-swimming-pool-rippled-water-detail.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                flex-flow: wrap;       
+            }
+
+        </style>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/oasis.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <p class="contact">Owner: Mark Domian<br>Phone Number: (205) 217-6256<br> Email: mdoma2@aol.com</p>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="poolphotos.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <i class="fa fa-bars" onClick="showMenu()"></i>
+            </nav>
+
+         <div class="text-box">
+             <h1>Oasis Pool Construction - Gallery</h1>
+             <p>Premier Pool Builder</p>
+         </div>
+
+
+        </section>
+
+        <!-----Testimonials----->
+        <div id="galleryBackgroundImage">
+            <div class="container">
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/IMG_5571.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/IMG_2777.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/IMG_2776.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/IMG_2771(1).jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/imagejpeg_1(1).jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/imagejpeg_0(18).jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/imagejpeg_0(17).jpg" alt="Image" width="250" height="250"> 
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20191119_132014_optimized.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20190802_093921.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20190125_141719.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20180822_122655.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20180822_122443.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20170918_143542.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20170414_120607.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/20170414_111737.jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="img/imagejpeg_0(29).jpg" alt="Image" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- The Modal -->
+
+
+
+
+		<footer id='footer'><p>Owner: Mark Domian<br>Phone Number: (205) 217-6256<br>
+            <br>&copy;2021 OASIS POOL CONSTRUCTION INC. ALL RIGHTS RESERVE.</p>
+	
+		</footer> 
+    <!------JavaScript for toggle menu------->
+     <script>
+     
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+
+     </script>
+
+
+    </body>
+</html>
